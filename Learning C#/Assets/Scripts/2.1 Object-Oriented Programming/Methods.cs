@@ -19,6 +19,18 @@ public class Methods : MonoBehaviour
     int addTwoNumbers(int a, int b) {
         return a + b;
     }
+    
+    // More about return statement
+    int FindIndexOf(int number, int[] numbers) {
+        for (int i = 0; i < numbers.Length; i++) {
+            if (numbers[i] == number) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    Debug.Log(FindIndexOf(11, numbers));
 
     int Sum(int[] numbers) {
         int sum = 0;
