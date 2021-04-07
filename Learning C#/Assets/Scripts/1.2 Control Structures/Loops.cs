@@ -32,5 +32,23 @@ public class Loops : MonoBehaviour
             Debug.Log(3 * i);
         }
         
+        // Break terminates loop execution
+        for (int i = 0; i < 9; i++) {
+            if (i == 5) {
+                // if i is even, skip to the next iteration
+                break;
+            }
+            Debug.Log(i);
+        }
+        
+        // Continue quits this iteration and moves onto the next 
+        for (int i = 0; i < 9; i++) {
+            if (i % 2 == 0) {
+                // if i is even, skip to the next iteration
+                continue;
+            }
+            Debug.Log(i);
+        }
+        
     }
 }
